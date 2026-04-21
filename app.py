@@ -27,4 +27,4 @@ def home():
 
     return render_template('index.html', cost=cost, message=message)
 
-app.run(host='0.0.0.0', port=5000)
+app.run(host='0.0.0.0', port=8080)
