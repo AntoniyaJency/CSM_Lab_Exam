@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud Cost App</title>
+</head>
+<body>
+
+<h2>Cloud Resource Management</h2>
+
+<form method="POST">
+    <label>Instance Type:</label>
+    <select name="instance">
+        <option value="t2.micro">t2.micro</option>
+        <option value="t2.medium">t2.medium</option>
+    </select><br><br>
+
+    <label>Usage Hours:</label>
+    <input type="number" name="hours" required><br><br>
+
+    <button type="submit">Calculate</button>
+</form>
+
+<h3>Cost: {{cost}}</h3>
+<h3>{{message}}</h3>
+
+<h3>Cross-Cloud Comparison</h3>
+<table border="1">
+<tr><th>Cloud</th><th>Cost/hr</th></tr>
+<tr><td>AWS</td><td>0.0116</td></tr>
+<tr><td>Azure</td><td>0.012</td></tr>
+<tr><td>GCP</td><td>0.010</td></tr>
+</table>
+
+</body>
+</html>
